@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Fetch the current public IP of the node
-NODE_PUBLIC_IP=$(curl -s ifconfig.me)
+NODE_PUBLIC_IP=$(curl -s -4 ifconfig.me)
 
 # Check if we got the IP
 if [[ -z "$NODE_PUBLIC_IP" ]]; then
