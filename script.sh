@@ -10,4 +10,4 @@ if [[ -z "$NODE_PUBLIC_IP" ]]; then
 fi
 
 # Run the installation command with the dynamic IP
-curl -sfL https://get.k3s.io | K3S_URL=https://74.235.164.239:6443 K3S_TOKEN=K1005590a179dd0d6bd7c80d7e69809de37f70fcbd2c4b287ea4a7693da984a7bed::server:ae832c1932ed9a3d304a9008a0124990 sh -s - --node-external-ip=$NODE_PUBLIC_IP
+curl -sfL https://get.k3s.io | K3S_URL=https://172.178.89.167:6443 K3S_TOKEN=K1029b1ebf41a07420cf8cec5790ea295b97c8af2fe7d258bed65b18cb36b1ba179::server:7f1decb998e737fb193ee5f52da21c2e sh -s - --node-external-ip=$NODE_PUBLIC_IP
